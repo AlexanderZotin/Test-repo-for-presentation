@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Сайт, который хостится на Github pages!</title>
+    </head>
+
+   <body>
+        <h2>Сайт, который хостится на Github pages!</h2>
+        <div id = "container"></div>
+
+        <script>
+            for(let i = 0; i < 1000; i++) {
+                let new = document.getElementById("container").appendChild(document.createElement("button"));
+                new.textContent = "Кнопка!";
+                new.addEventListener("click", () => {new.style.background = "#0000FF"});
+            }
+        </script>
+  
+        <style>
+            html, body {
+                min-width: 100vw;
+                min-height: 100vh;
+                text-align: center;
+                font-family: arial;
+            }
+
+            button {
+                font-size: 5vh;
+                border-width: 0px;
+                background: #00693E;
+                color: white;
+            }
+        </style>
+   </body>
+</html>
