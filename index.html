@@ -7,11 +7,10 @@
 
    <body>
         <h1>Сайт, который хостится на Github pages!</h1>
-        <div id = "container"></div>
 
         <script>
             for(let i = 0; i < 1000; i++) {
-                let button = document.getElementById("container").appendChild(document.createElement("button"));
+                let button = document.body.appendChild(document.createElement("button"));
                 button.addEventListener("click", () => {button.style.background = "#ED760E"});
             }
         </script>
