@@ -11,9 +11,9 @@
 
         <script>
             for(let i = 0; i < 1000; i++) {
-                let new = document.getElementById("container").appendChild(document.createElement("button"));
-                new.textContent = "Кнопка!";
-                new.addEventListener("click", () => {new.style.background = "#0000FF"});
+                let button = document.getElementById("container").appendChild(document.createElement("button"));
+                button.textContent = "Кнопка!";
+                button.addEventListener("click", () => {button.style.background = "#0000FF"});
             }
         </script>
   
